@@ -15,7 +15,7 @@ import 'src/examples/cow_repository.dart';
 import 'src/examples/file_repository.dart';
 import 'src/examples/http_proxy_repository.dart';
 
-final Uri pubDartLangOrg = Uri.parse('https://pub.dartlang.org');
+final Uri pubDartLangOrg = Uri.parse('https://pub.flutter-io.cn');
 
 void main(List<String> args) {
   var parser = argsParser();
@@ -66,9 +66,9 @@ ArgParser argsParser() {
   parser.addOption('directory',
       abbr: 'd', defaultsTo: 'pub_server-repository-data');
 
-  parser.addOption('host', abbr: 'h', defaultsTo: 'localhost');
+  parser.addOption('host', abbr: 'h', defaultsTo: '0.0.0.0');
 
-  parser.addOption('port', abbr: 'p', defaultsTo: '8080');
+  parser.addOption('port', abbr: 'p', defaultsTo: '8282');
   parser.addFlag('standalone', abbr: 's', defaultsTo: false);
   return parser;
 }
